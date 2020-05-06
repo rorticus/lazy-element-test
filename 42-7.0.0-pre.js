@@ -1,0 +1,10 @@
+/*!
+ * 
+ * [Dojo](https://dojo.io/)
+ * Copyright [JS Foundation](https://js.foundation/) & contributors
+ * [New BSD license](https://github.com/dojo/meta/blob/master/LICENSE)
+ * All rights reserved
+ * 
+ */
+(window.dojoWebpackJsonpdojo_widgets_custom_elements=window.dojoWebpackJsonpdojo_widgets_custom_elements||[]).push([[42],{26:function(e,o,t){"use strict";t.r(o),t.d(o,"Popup",function(){return d});var n=t(84),r=t(75),i=t(85),s=t(5),l=t(86),p=t(87);const d=Object(s.a)({dimensions:n.b,theme:r.b,bodyScroll:i.a}).properties().children()(function({properties:e,children:o,middleware:{dimensions:t,theme:n,bodyScroll:r}}){const{underlayVisible:i=!1,position:d="below",x:c,yBottom:u,yTop:a,onClose:m,open:y}=e(),b=t.get("wrapper"),_=document.documentElement.scrollTop+document.documentElement.clientHeight,w=document.documentElement.scrollTop,h=a+b.size.height<=_,v=u-b.size.height>=w;let f={opacity:"0"};b.size.height&&(f={left:`${c}px`,opacity:"1"},"below"===d?f.top=h?`${a}px`:`${u-b.size.height}px`:"above"===d&&(f.top=v?`${u-b.size.height}px`:`${a}px`));const g=n.classes(l);return r(!y),y&&Object(s.m)("body",null,Object(s.m)("div",{key:"underlay",classes:[n.variant(),p.underlay,i&&g.underlayVisible],onclick:m}),Object(s.m)("div",{key:"wrapper",classes:[n.variant(),p.root],styles:f},o()))});o.default=d},85:function(e,o,t){"use strict";t.d(o,"a",function(){return l});var n=t(5),r=t(0);const i=Object(n.a)({destroy:n.c}),s=r.a.document.body.style,l=i(function({middleware:{destroy:e}}){let o=!1,t=void 0;const n=()=>{o&&(t?s.setProperty("overflow",t):s.removeProperty("overflow"),o=!1,t=void 0)};return e(()=>{o&&n()}),e=>{e?n():o||(o=!0,t=s.getPropertyValue("overflow"),s.setProperty("overflow","hidden"))}});o.b=l},86:function(e,o,t){e.exports={" _key":"@dojo/widgets/popup",underlayVisible:"popup-m__underlayVisible__1Cxv3"}},87:function(e,o,t){e.exports={" _key":"@dojo/widgets/popup",root:"popup-m__root__3WJlO",underlay:"popup-m__underlay__2CC_p"}}}]);
+//# sourceMappingURL=42-7.0.0-pre.js.map

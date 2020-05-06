@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>examples</title>
+	<meta name="theme-color" content="#222127">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./dojo-7.0.0-pre.css">
+	<script src="./dojo-7.0.0-pre.js"></script>
+</head>
+<body>
+<dojo-button>Hello</dojo-button>
+<script src="./bootstrap-7.0.0-pre.js"></script>
+<script>
+	setTimeout(() => {
+		const d = document.createElement('dojo-card');
+		d.setAttribute('title', 'Dojo Card');
+		d.innerHTML = `
+<div slot="content">I am card content!</div>
+		`;
+		document.body.appendChild(d);
+	}, 5000);
+</script>
+</body>
+</html>
